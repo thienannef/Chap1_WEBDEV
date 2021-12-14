@@ -1,0 +1,366 @@
+/* format css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+a{
+    text-decoration-style: none;
+}
+
+
+.header{
+    top: 0px;
+    height: 46px;
+    width: 100%;
+    position: fixed;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+.header__nav{
+    display: flex;
+    /* position: relative; */
+}
+.header__nav li{
+    display: inline-block;
+}
+.header__nav li a {
+    text-transform: capitalize;
+}
+.subnav_father{
+    position: relative;
+}
+.header__nav > li > a{
+    color: white;
+}
+.subnav{
+    display: none;
+    position: absolute; 
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 10px rgba(49, 49, 49, 0.459);
+}
+.subnav_item{
+    border: 2px rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+}
+.subnav_item > a{
+    color: black;
+}
+.subnav_item > a:hover{
+    background-color: rgba(170, 170, 170, 0.795);
+}
+.header__nav li a{
+    text-decoration: none;
+    line-height: 46px;
+    padding: 10px;
+}
+.header__nav li:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.header__nav li:hover .subnav{
+    display: block;
+}
+.header__nav li a:hover{
+    color: black;
+}
+.header__nav{
+    color: rgb(255, 255, 255);
+    width: 60px;
+    height: 46px;
+}
+button{
+    border: none;
+}
+.header__search{
+    color: rgb(0, 0, 0);
+    width: 60px;
+    height: 46px;
+    font-size: 20px;
+    color:rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+.header__search:hover{
+    width: 60px;
+    height: 46px;
+    background-color: rgb(241, 70, 70);
+    cursor: pointer;
+}
+
+/* slide */
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('./photo/ny.jpg') top center / cover no-repeat;
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    width: 100%;
+    text-align: center;
+    text-shadow: 0 0 4px #000;
+}
+#slider .text-heading {
+    font-weight: 500;
+    font-size: 24px;
+}
+#slider .text-discription {
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+/* content */
+#content .content__section{
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+#content .content__heading{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-weight: 500;
+}
+#content .content__sub__heading{
+    text-align: center;
+    font-style: italic;
+    color:rgba(129, 126, 126, 0.795);
+    font-size: 15px;
+    margin-top: 25px;
+}
+#content .content__text{
+    text-align: justify;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+/* member of team */
+#content .team{
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#content .name{
+    font-size: 15px;
+    text-align: center;
+}
+#content .member-img{
+    width: 154px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+/* tour date */
+#tour__section{
+    background-color: black;
+    color: white;
+    height: 830px;
+}
+.tour{
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    margin-top: 10px;
+    box-sizing: border-box;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+.tour__heading{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-weight: 500;
+}
+.tour__sub__heading{
+    text-align: center;
+    font-style: italic;
+    color:rgb(187, 184, 184);
+    font-size: 15px;
+    margin-top: 25px;
+}
+ul{
+    list-style-type: none;
+}
+.ticket-list{
+    background-color: white;
+    color: rgba(0, 0, 0, 0.8);
+    margin-top: 40px;
+}
+.ticket-list > li{
+    color:rgb(116, 116, 116);
+    font-size: 15px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border: 1px solid rgba(175, 175, 175, 0.678);
+}
+.sold-out{
+    background-color: rgb(255, 72, 0);
+    color: white;
+    padding: 5px 8px;
+    margin-left: 16px;
+}
+.ticket-list .ticketsold{
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
+}
+
+/* place */
+.place-list{
+    margin-top: 32px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.place-item{
+    float: left;
+    width: 33.33333333%;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.place-img{
+    width: 100%;
+}
+.place-body {
+    padding: 16px;
+    font-size: 15px;
+    background-color: #fff;
+}
+.place-heading {
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+}
+.place-time {
+    margin-top: 15px;
+    color: #757575;
+}
+.place-discription {
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+/* contact */
+.contact__section{
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    margin-top: 10px;
+    box-sizing: border-box;
+    padding-top: 64px;
+    padding-bottom: 144px;
+}
+.contact__heading{
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+.contact__sub__heading{
+    text-align: center;
+    font-size: 15px;
+    color:rgb(143, 143, 143);
+    font-style: italic;
+}
+
+.contact-detail{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.contact-detail > ul > li{
+    line-height: 1.4;
+}
+
+.name-email-message{
+    margin-right: -8px;
+}
+.name-email{
+    display: inline-flex;
+}
+.name-email > input{
+    line-height: 8px;
+    width: 50%;
+    margin: 5px 8px;
+    padding: 8px 16px;
+    border: 1px solid rgba(0, 0, 0, 0.644);
+}
+.message > input{
+    line-height: 8px;
+    width: 410px;
+    margin: 5px 8px;
+    padding: 8px 16px;
+    border: 1px solid rgba(0, 0, 0, 0.644);
+}
+.send-btn{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    float: right;
+    margin-top: 12px;
+}
+.send-btn:hover{
+    padding: 10px;
+    background-color: rgba(161, 161, 161, 0.507);
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    float: right;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+/* map */
+.map{
+    max-width: 100%;
+    height: auto;
+    object-fit: fill;
+}
+
+/* footer */
+.footer{
+    height: 220px;
+    background-color: white;
+    font-size: 24px;
+    text-align: center;
+    color: rgb(107, 106, 106);
+}
+.footer i{
+    margin-top: 64px;
+}
+.footer i:hover{
+    color: rgba(185, 184, 184, 0.664);
+}
+.footer p{
+    font-size: 15px;
+    margin-top: 16px;
+}
